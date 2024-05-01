@@ -22,10 +22,10 @@
       <div class="header__nav">
         <div class="header__backdrop" id="headerBackdrop" onclick="navToggle()"></div>
         <ul class="header__ul" id="headerUl">
-          <li class="header__li"><a class="header__a" href="/">About</a></li>
-          <li class="header__li"><a class="header__a" href="/">Skills</a></li>
-          <li class="header__li"><a class="header__a" href="/">Projects</a></li>
-          <li class="header__li"><a class="header__a" href="/">Contacts</a></li>
+          <li class="header__li"><a class="header__a" href="#about">About</a></li>
+          <li class="header__li"><a class="header__a" href="#skills">Skills</a></li>
+          <li class="header__li"><a class="header__a" href="#projects">Projects</a></li>
+          <li class="header__li"><a class="header__a" href="#contacts">Contacts</a></li>
   
           <span class="material-icons icon-close" onclick="navToggle()">close</span>
         </ul>
@@ -48,7 +48,7 @@
 
   </header>
 
-  <div class="my-info dark-mode">
+  <div id="about" class="my-info dark-mode">
     <img class="my-img" src="./img/me.png" alt="develop">
     <div class="my-box">
       <h2 class="my-profession">Front-End Developer</h2>
@@ -72,7 +72,7 @@
     </div>
 
   </div>
-  <section class="skills-box">
+  <section id="skills" class="skills-box">
 
     <div>
       <h3 class="education-title">Education</h3>
@@ -108,7 +108,7 @@
       </div>
     </div>
   </section>
-  <section class="project">
+  <section id="projects" class="project">
     <h2>My projects</h2>
     <div class="project-container">
       <div class="dark-mode project-slide">
@@ -165,7 +165,7 @@
       </div>
     </div>
   </section>
-  <section class="contact">
+  <section id="contacts" class="contact">
     <div class="contact-row">
       <h3 class="contact-title">Contact Me:</h3>
       <div class="contact-info">

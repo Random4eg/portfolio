@@ -1,0 +1,46 @@
+.project {
+	padding: 20rem;
+	img {
+		border-radius: 20rem;
+	}
+
+	&__item {
+		padding: 20rem;	
+	}
+
+	&__name {
+		margin-top: 20rem;
+	}
+
+	&__tech {margin-top: 20rem;
+	}
+
+	.project-container {
+	}
+	.dark-mode {
+		background: var(--c-border);
+	}
+	.project-slide {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 50rem;
+		text-align: center;
+		padding: 20rem;
+		border-radius: 20rem;
+		@include desktop-small {
+			grid-template-columns: 1fr;
+			gap: 20rem;
+			margin-bottom: 30rem;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+		.btn-projects {
+		margin-top: 20rem;
+		display: flex;
+		margin-inline: auto;
+	}
+	.hiddens.hidden {
+		display: none;
+	}
+}

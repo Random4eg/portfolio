@@ -1,0 +1,29 @@
+.my-info {
+	padding: 20rem;
+	display: flex;
+	// text-align: center;
+	// justify-content: center;
+	// align-items: center;
+	gap: 20rem;
+	@include tablet {
+		flex-direction: column;
+		gap: 50rem;
+		margin-bottom: 30rem;
+		justify-content: center;
+		align-items: center;
+	}
+}
+.my-img {
+	border-radius: 50rem;
+	border: 2rem solid blueviolet;
+}
+.my-name {
+	text-align: start;
+}
+.home__btn {
+	@include tablet {
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
+}

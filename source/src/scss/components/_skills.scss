@@ -1,0 +1,30 @@
+.skills-box {
+	display: flex;
+	justify-content: space-between;
+	padding: 20rem;
+	@include desktop-small {
+		flex-direction: column;
+		gap: 50rem;
+		margin-bottom: 30rem;
+		justify-content: center;
+		align-items: center;
+	}
+}
+.skills-title {
+	display: inline-flex;
+}
+.skill-list {
+	display: flex;
+}
+.skill-list-item {
+	display: flex;
+	gap: 20rem;
+	align-items: center;
+	padding: 20rem;
+}
+.skill-img {
+	max-width: 50rem;
+	background: white;
+	margin: 10rem;
+	border-radius: 5rem;
+}

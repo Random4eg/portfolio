@@ -1,0 +1,31 @@
+<header class="header">
+	<div class="header-box">
+		<div><img class="header__logo" src="../img/logo.png" alt="logo"></div>
+		<div class="header__nav">
+			<div class="header__backdrop" id="headerBackdrop" onclick="navToggle()"></div>
+			<ul class="header__ul" id="headerUl">
+				<li class="header__li"><a class="header__a" href="/">About</a></li>
+				<li class="header__li"><a class="header__a" href="/">Skills</a></li>
+				<li class="header__li"><a class="header__a" href="/">Projects</a></li>
+				<li class="header__li"><a class="header__a" href="/">Contacts</a></li>
+	
+				<span class="material-icons icon-close" onclick="navToggle()">close</span>
+			</ul>
+			<span class="material-icons icon-menu" onclick="navToggle()">menu</span>
+		</div>
+	
+		<div class="toggle-container">
+			<button class="theme-btn light" onclick="setTheme('light')" title="Light mode">
+				<span class="material-icons light_mode">
+					light_mode
+				</span>
+			</button>
+			<button class="theme-btn dark" onclick="setTheme('dark')" title="Dark mode">
+				<span class="material-icons dark_mode">
+					dark_mode
+				</span>
+			</button>
+		</div>
+	</div>
+
+</header>

@@ -6,26 +6,26 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title> My Portfolio in LemonSchool</title>
-  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="./css/main.css" />
+	<script src="https://kit.fontawesome.com/f6dd896e10.js" crossorigin="anonymous"></script>
 	</head>
 
 <body>
-
 	<header class="header">
 	<div class="header-box">
-    <div><img class="header__logo" src="./img/logo.png" alt="logo"></div>
+		<div class="header__logo">My Logo</div>
 		<div class="header__nav">
 			<div class="header__backdrop" id="headerBackdrop" onclick="navToggle()"></div>
 			<ul class="header__ul" id="headerUl">
-				<li class="header__li"><a class="header__a" href="/">About</a></li>
-				<li class="header__li"><a class="header__a" href="/">Skills</a></li>
-				<li class="header__li"><a class="header__a" href="/">Projects</a></li>
-				<li class="header__li"><a class="header__a" href="/">Contacts</a></li>
+				<li class="header__li"><a class="header__a" href="#About">About</a></li>
+				<li class="header__li"><a class="header__a" href="#Skills">Skills</a></li>
+				<li class="header__li"><a class="header__a" href="#Projects">Projects</a></li>
+				<li class="header__li"><a class="header__a" href="#Contacts">Contacts</a></li>
 	
 				<span class="material-icons icon-close" onclick="navToggle()">close</span>
 			</ul>
@@ -48,8 +48,10 @@
 
 </header>
 
+	<button onclick="topFunction()" id="myBtn" class="btn" title="Go to top">
+    <i class="fa-solid fa-arrow-up"></i></button>
 	<div class="my-info dark-mode">
-    <img class="my-img" src="./img/me.png" alt="develop">
+    <img class="my-img" src="./img/dev/me.png" alt="develop">
     <div class="my-box">
         <h2 class="my-profession">Front-End Developer</h2>
         <h1 class="my-name">Kazakov Vyacheslav</h1>
@@ -65,14 +67,14 @@
             aesthetically pleasing, but also accessible and functional, so I like to work closely with stakeholders.
             Let's talk!</p>
         <div class="home__btn">
-            <button class="btn" for="checkbox">Contacts</button>
+            <a class=" btn" href="#Contacts">Contacts</a>
             <a class="btn content-download button-main button-scheme" href="KazakovVyacheslavResumeSWE.html"
                 download>Download CV</a>
         </div>
     </div>
 
 </div>
-	<section class="skills-box">
+	<section id="Skills" class="skills-box">
 
     <div>
         <h3 class="education-title">Education</h3>
@@ -89,15 +91,15 @@
     <div class="skills-container">
         <h3 class="skills-title">Tech skills</h3>
         <div class="skill-list">
-            <img class="skill-img" src="./img/html-5.png" alt="html-5">
-            <img class="skill-img" src="./img/css.png" alt="css">
-            <img class="skill-img" src="./img/github.png" alt="github">
-            <img class="skill-img" src="./img/bootstrap.png" alt="bootstrap">
-            <img class="skill-img" src="./img/java-script.png" alt="java-script">
-            <img class="skill-img" src="./img/Angular.png" alt="Angular">
-            <img class="skill-img" src="./img/react.png" alt="react">
-            <img class="skill-img" src="./img/vue.png" alt="vue">
-            <img class="skill-img" src="./img/node-js.png" alt="node-js">
+            <img class="skill-img" src="./img/icons/html-5.png" alt="html-5">
+            <img class="skill-img" src="./img/icons/css.png" alt="css">
+            <img class="skill-img" src="./img/icons/github.png" alt="github">
+            <img class="skill-img" src="./img/icons/bootstrap.png" alt="bootstrap">
+            <img class="skill-img" src="./img/icons/java-script.png" alt="java-script">
+            <img class="skill-img" src="./img/icons/Angular.png" alt="Angular">
+            <img class="skill-img" src="./img/icons/react.png" alt="react">
+            <img class="skill-img" src="./img/icons/vue.png" alt="vue">
+            <img class="skill-img" src="./img/icons/node-js.png" alt="node-js">
         </div>
         <h3 class="skill-title">Soft skills</h3>
         <div class="skill-list">
@@ -108,22 +110,22 @@
         </div>
     </div>
 </section>
-	<section class="project">
+	<section id="Projects" class="project">
   <h2>My projects</h2>
   <div class="project-container">
     <div class="dark-mode project-slide">
       <div class="project-box">
-        <div class="project__item"><img src="./img/2.png" alt="project">
+        <div class="project__item"><img src="./img/projects/2.png" alt="project">
           <div class="project__tech">Technologies: <span> Angular/React.js</div>
         </div>
       </div>
       <div class="project-box">
-        <div class="project__item"><img src="./img/5.png" alt="project">
+        <div class="project__item"><img src="./img/projects/5.png" alt="project">
           <div class="project__tech">Technologies: <span> HTML/CSS</span></div>
         </div>
       </div>
       <div class="project-box">
-        <div class="project__item"><img src="./img/8.png" alt="project">
+        <div class="project__item"><img src="./img/projects/8.png" alt="project">
           <div class="project__tech">Technologies: <span> HTML/CSS</span></div>
         </div>
       </div>
@@ -131,41 +133,41 @@
     <button class="btn btn-projects" id="toggleButton">Show/Hidden</button>
     <div class="hiddens project-slide">
       <div class="project-box">
-        <div class="project__item"><img src="./img/4.png" alt="project">
+        <div class="project__item"><img src="./img/projects/4.png" alt="project">
           <div class="project__tech">Technologies: <span>HTML/CSS</span></div>
         </div>
       </div>
       <div class="project-box">
-        <div class="project__item"><img src="./img/1.png" alt="project">
+        <div class="project__item"><img src="./img/projects/1.png" alt="project">
           <div class="project__tech">Technologies: <span> HTML/CSS</span></div>
         </div>
       </div>
       <div class="project-box">
-        <div class="project__item"><img src="./img/6.png" alt="project">
+        <div class="project__item"><img src="./img/projects/6.png" alt="project">
           <div class="project__tech">Technologies: <span> React.js and Vue.js</span></div>
         </div>
       </div>
     </div>
     <div class="hiddens dark-mode project-slide">
       <div class="project-box">
-        <div class="project__item"><img src="./img/7.png" alt="project">
+        <div class="project__item"><img src="../img/projects/7.png" alt="project">
           <div class="project__tech">Technologies: <span> HTML/CSS</span></div>
         </div>
       </div>
       <div class="project-box">
-        <div class="project__item"><img src="./img/3.png" alt="project">
+        <div class="project__item"><img src="./img/projects/3.png" alt="project">
           <div class="project__tech">Technologies: <span> HTML/CSS</span></div>
         </div>
       </div>
       <div class="project-box">
-        <div class="project__item"><img src="./img/9.png" alt="project">
+        <div class="project__item"><img src="./img/projects/9.png" alt="project">
           <div class="project__tech">Technologies: <span> HTML/CSS</span></div>
         </div>
       </div>
     </div>
   </div>
 </section>
-	<section class="contact">
+	<section id="Contacts" class="contact">
   <div class="contact-row">
     <h3 class="contact-title">Contact Me:</h3>
     <div class="contact-info">
@@ -192,16 +194,31 @@
 </section>
 	<footer class="footer">
 	<div class="about__link">
-    <a href="/"><img src="./img/gitHub.svg" alt="github" /></a>
-    <a href="/"><img src="./img/linkedIn.svg" alt="linkedin" /></a>
-    <a href="/"><img src="./img/instagram.svg" alt="instagram" /></a>
-    <a href="/"><img src="./img/twitter.svg" alt="twitter" /></a>
+		<a href="/"><img src="./img/links/gitHub.svg" alt="github" /></a>
+		<a href="/"><img src="./img/links/linkedIn.svg" alt="linkedin" /></a>
+		<a href="/"><img src="./img/links/instagram.svg" alt="instagram" /></a>
+		<a href="/"><img src="./img/links/twitter.svg" alt="twitter" /></a>
 	</div>
 	<div class="footer__copyright">Copyright © 2024 Designed by @kazakov.vyacheslav FRONT-END developer</div>
 </footer>
 
 	<script src="./js/index.bundle.js"></script>
 	<script>
+		window.onscroll = function () { scrollFunction() };
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				document.getElementById("myBtn").style.display = "block";
+			} else {
+				document.getElementById("myBtn").style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0; // For Safari
+			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
 		function navToggle() {
 			document.getElementById("headerUl").classList.toggle("_active");
 			document.getElementById("headerBackdrop").classList.toggle("_active");

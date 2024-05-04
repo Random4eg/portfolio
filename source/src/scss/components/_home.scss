@@ -1,6 +1,8 @@
 .my-info {
 	padding: 20rem;
 	display: flex;
+	gap: 50rem;
+	justify-content: center;
 	// text-align: center;
 	// justify-content: center;
 	// align-items: center;
@@ -13,14 +15,15 @@
 		align-items: center;
 	}
 }
+.my-desc{max-width: 500rem;}
 .my-img {
 	border-radius: 50rem;
-	border: 2rem solid var(--c-primary);
+	border: 2rem solid var(--gray);
 }
 .my-name {
 	text-align: start;
 }
-.home__btn {
+.home__btn {margin-top: 40rem;
 	@include tablet {
 		text-align: center;
 		justify-content: center;

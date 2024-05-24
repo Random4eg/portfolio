@@ -1,0 +1,1 @@
+!function(){"use strict";!function(){const t=document.getElementById("toggleButton"),e=document.querySelectorAll(".hiddens");t.addEventListener("click",(()=>{e.forEach((t=>{t.classList.toggle("hidden")})),"Show"===t.textContent?t.textContent="Hidden":t.textContent="Show"}))}()}();

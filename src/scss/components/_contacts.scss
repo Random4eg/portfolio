@@ -1,0 +1,32 @@
+.contact {
+	margin-top: 20rem;
+	padding: 30rem;
+
+	@include desktop-small {
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin-inline: auto;
+	}
+
+	// &__desc {}
+
+	// &__title {}
+}
+
+.contact-row {
+	font-weight: 400;
+	font-size: 18rem;
+	line-height: 150%;
+	letter-spacing: -0.03em;
+}
+
+// .contact-title {}
+
+// .contact-info {}
+
+.contact-form {
+	margin-top: 20rem;
+}
+
+// .btn {}
